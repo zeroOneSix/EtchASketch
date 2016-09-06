@@ -1,37 +1,90 @@
-[class*='col-']{
-	float:left;
-	padding-right: 20px;
-	border: 1px solid black;
-	text-align: center;
+*{
+	box-sizing: border-box;
+	
 }
 
-.fixed-size-square {
-		
+/* ---- HEADER STYLES */
+/* Style for header at top of page*/
+.header{
+	width: 100%;
+	padding: 1em;
+	color: #ffffff;
+	background-color: #333;
+	clear: left;
+	text-align: center;
+	
+}
+
+/* Style for Navigation bar with clickable links */
+nav {
+	margin: 0;
+	padding: 0;
+	
+	display: inline;
+	
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li{
+	float: left;
+}
+
+li a{
 	display: block;
-	width: 150px;
-	height: 150px;
-	box-sizing: border-box;
+	color: white;
+	text-align: center;
+	padding: 14px; 16px;
+	text-decoration: none;
 }	
 
+li a:hover{
+	background-color: #111;
+}
+
+
+/*---GRID STYLES */
+
+.grid{
+	
+	height: 960px;
+	width: 960px;
+	margin:0;
+	position: absolute;
+	
+}
+
+.square{
+	
+	float:left;
+	border: 1px solid black;
+	text-align: center;
+	width: 6.25%;
+	height: 6.25%;
+	display: block;
+	
+	
+}
+	
+/* The original Colour */
 
 .orgColor{
 
-	background: #4679BD;
+	background-color: rgb(100%,100%,100%);
 }
 
+/* The colour it will be changed to */
 .changedColor{
 	
-	background: #ff0000;
+	background: #000000;
 
 }
-[classs*='col-']: last-of-type{
-	padding-right: 0;
-}
 
-.col-1-8{
-
-	width: 25%;
-
-}
 
 
